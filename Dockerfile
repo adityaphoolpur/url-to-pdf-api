@@ -3,5 +3,5 @@ FROM node:16-alpine
 # replace this with your application's default port
 EXPOSE 8888
 WORKDIR /node/app
-&& npm install \
+RUN npm install \
 && npm start
