@@ -4,6 +4,5 @@ FROM node:10.0.0
 EXPOSE 9000
 WORKDIR /usr/app
 COPY ./ /usr/app
-RUN cp /usr/app/.env.sample .env \
-&& npm install
+RUN npm install
 CMD [ "npm","start" ]
