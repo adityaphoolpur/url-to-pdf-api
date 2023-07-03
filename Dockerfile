@@ -4,5 +4,6 @@ FROM node:16-alpine
 EXPOSE 8888
 WORKDIR /usr/app
 COPY ./ /usr/app
-RUN npm install
+RUN npm install /
+&& npm --version
 CMD [ "npm","start" ]
