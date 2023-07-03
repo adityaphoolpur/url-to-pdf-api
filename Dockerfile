@@ -1,5 +1,5 @@
 # specify the node base image with your desired version node:<version>
-FROM node:16
+FROM node:16.0.0
 # replace this with your application's default port
 EXPOSE 3000
 WORKDIR /usr/app
